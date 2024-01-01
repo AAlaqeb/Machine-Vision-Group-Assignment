@@ -342,6 +342,5 @@ def plot_confusionMatrix(model, test_dataloader):
                       columns = [i for i in class_names])
   plt.figure(figsize = (20,10))
   sn.heatmap(df_cm, annot=True)
-  # plt.savefig('output.png')
 
 plot_confusionMatrix(model, test_dataloader)
