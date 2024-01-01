@@ -10,7 +10,7 @@ Original file is located at
 # Importing the necessary libraries
 import torch
 from torch import nn
-
+  
 import torchvision
 from torchvision import datasets, models
 import torchvision.transforms as transforms
