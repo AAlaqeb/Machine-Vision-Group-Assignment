@@ -150,7 +150,7 @@ summary(model)
 
 # Define loss function and optimizer
 loss_fn = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(),lr=0.001,momentum=0.9)#sgd:stochastic gradiant descent
+optimizer = torch.optim.SGD(model.parameters(),lr=0.001,momentum=0.9) # SDG: Stochastic Gradient Descent
 
 # Move model to GPU 
 model.to('cuda')
