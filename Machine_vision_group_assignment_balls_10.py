@@ -28,7 +28,7 @@ transform = transforms.Compose(
     [ transforms.Resize((224,224)), # Resize images to 224x224
       transforms.CenterCrop(224), # Center crop to 224x224
       transforms.ToTensor(), # this to convert the images to 4D matrix (B,C,H,W)
-      transforms.Normalize((0.485,0.456,0.406),(0.229,0.224,0.225))] # Normalize with mean and std this require the mean and standard deviation
+      transforms.Normalize((0.485,0.456,0.406),(0.229,0.224,0.225))] # Normalize images with mean and std deviation
 )
 
 # Define directories for train and test datasets
